@@ -1,0 +1,5 @@
+package lk.ijse.dep.powerWorldGyms.business;
+
+public enum  BOTypes {
+    ATTENDANCE,EQUIPMENTS,EXERCISE,INSTRUCTORS,MEMBERSHIP,MEMBERSHIP_TYPE,SCHEDULES,MANAGER;
+}

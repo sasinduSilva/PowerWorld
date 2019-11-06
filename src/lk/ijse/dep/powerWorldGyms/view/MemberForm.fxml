@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="676.0" prefWidth="679.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.powerWorldGyms.controller.MemberFormController">
+   <children>
+      <AnchorPane prefHeight="676.0" prefWidth="679.0" style="-fx-background-color: #030307; -fx-background-radius: 15;">
+         <children>
+            <VBox prefHeight="544.0" prefWidth="74.0" style="-fx-background-color: #131022; -fx-background-radius: 15 0 0 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="79.0" prefWidth="74.0" style="-fx-background-radius: 15 0 15 15;" />
+                  <Button fx:id="btnLogout" contentDisplay="TOP" mnemonicParsing="false" onAction="#navigate" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../css/styles.css" text="Log out" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/logOut.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnAbout" contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#navigate" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../css/styles.css" text="About" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/about.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnHelp" contentDisplay="TOP" layoutX="10.0" layoutY="76.0" mnemonicParsing="false" onAction="#navigate" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../css/styles.css" text="Help" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/help.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnContact" contentDisplay="TOP" layoutX="10.0" layoutY="221.0" mnemonicParsing="false" onAction="#navigate" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../css/styles.css" text="Contact" textFill="#a868a0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/telephone3.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <AnchorPane layoutX="91.0" layoutY="69.0" prefHeight="604.0" prefWidth="582.0" style="-fx-background-color: #131022; -fx-background-radius: 10;" stylesheets="@../css/styles.css">
+               <children>
+                  <Label layoutX="39.0" layoutY="34.0" text="POWER" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="157.0" layoutY="34.0" text="WORLD" textFill="#fff600">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMembrID" alignment="CENTER" layoutX="407.0" layoutY="34.0" prefHeight="21.0" prefWidth="106.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" text="Member Id" textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnDone" layoutX="116.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnDone_OnAction" prefHeight="26.0" prefWidth="97.0" styleClass="button4" stylesheets="@../css/styles.css" text="Done" textFill="WHITE" />
+                  <Button fx:id="btnSkip" layoutX="405.0" layoutY="507.0" mnemonicParsing="false" onAction="#btnSkip_OnAction" prefHeight="26.0" prefWidth="97.0" styleClass="button4" stylesheets="@../css/styles.css" text="Skip" textFill="WHITE" />
+                  <Button fx:id="btnBeginWrkout" layoutX="250.0" layoutY="435.0" mnemonicParsing="false" onAction="#btnBeginWrkout_OnAction" prefHeight="26.0" prefWidth="119.0" styleClass="button4" stylesheets="@../css/styles.css" text="Begin Workout" textFill="WHITE" />
+                  <TableView fx:id="tblWorkout" layoutX="39.0" layoutY="222.0" prefHeight="200.0" prefWidth="506.0">
+                    <columns>
+                      <TableColumn prefWidth="82.0" text="Body Part" />
+                      <TableColumn prefWidth="103.0" text="Exercies 01" />
+                        <TableColumn prefWidth="103.0" text="Exercise 02" />
+                        <TableColumn prefWidth="103.0" text="Exercise 03" />
+                        <TableColumn prefWidth="114.0" text="Reps" />
+                    </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="395.0" layoutY="65.0" prefHeight="21.0" prefWidth="129.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" text="Schedule " textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblScheduleNo" alignment="CENTER" layoutX="515.0" layoutY="65.0" prefHeight="21.0" prefWidth="34.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNoOfDays" alignment="CENTER" layoutX="239.0" layoutY="174.0" prefHeight="21.0" prefWidth="34.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER_RIGHT" layoutX="33.0" layoutY="174.0" prefHeight="21.0" prefWidth="198.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" text="You have to work out " textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNotification" layoutX="14.0" layoutY="101.0" onMouseClicked="#lblNotification_OnClicked" text="    Please Pick up your new Schedule" textFill="#41951c">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Assets/message.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="285.0" layoutY="174.0" prefHeight="21.0" prefWidth="207.0" style="-fx-background-radius: 5;" stylesheets="@../css/styles.css" text="Days on this schedule" textFill="#f2edf1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnEndWorkout" layoutX="256.0" layoutY="552.0" mnemonicParsing="false" onAction="#btnEndWorkout_OnAction" prefHeight="26.0" prefWidth="119.0" styleClass="button4" stylesheets="@../css/styles.css" text="End Workout" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="91.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="134.0" layoutY="29.0" text="KeepToo FX" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

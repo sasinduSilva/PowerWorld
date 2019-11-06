@@ -1,0 +1,90 @@
+.button2{
+    -fx-background-color: #393351;
+    -fx-background-radius: 20;
+}
+.button2:hover{
+    -fx-background-color: #524A7B;
+    -fx-background-radius: 20;
+}
+.button2:pressed{
+    -fx-background-color: #2F2B43;
+    -fx-background-radius: 20;
+}
+.button3{
+    -fx-background-color: #141124;
+    -fx-background-radius: 0 0 0 0;
+}
+.button3:hover{
+    -fx-background-color: #524A7B;
+
+}
+.button3:pressed{
+    -fx-background-color: #2F2B43;
+
+}
+.linear-grad{
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+}
+.button4{
+    -fx-background-color: #524A7B;
+
+
+}
+.button4:hover{
+    -fx-background-color: linear-gradient(to top left, #A868A0, #2D75E8);
+    -fx-background-radius: 30 30 30 30;
+
+}
+.button4:pressed{
+    -fx-background-color: linear-gradient(to top left, #2D75E8, #A868A0);
+    -fx-background-radius: 10 10 10 10;
+
+}
+.combo-box{
+    -fx-background-color: #fff600;
+    -fx-prompt-text-color: #FFFFFF;
+    -fx-background-radius: 5;
+
+}
+.combo-box:hover{
+    -fx-background-color: #fff600;
+    -fx-background-radius: 5;
+}
+.combo-box:pressed{
+    -fx-background-color: #fff600;
+    -fx-background-radius: 5;
+}
+.linear-gradButtons{
+    -fx-background-color: #7c6aa1;
+    -fx-background-radius: 20;
+    -fx-opacity: 0.65;
+
+
+
+
+}
+.linear-gradButtons:hover{
+    -fx-background-color: #524A7B;
+    -fx-background-radius: 20;
+    -fx-opacity: 0.80;
+
+
+
+}
+.linear-gradButtons:pressed{
+    -fx-background-color: #2F2b43;
+    -fx-background-radius: 20;
+    -fx-opacity: 1;
+
+
+
+}
+.jfxTextField{
+    /*-fx-font-family: Ubuntu;*/
+    -fx-font-family: Ubuntu;
+
+}
+.text-input{
+    -fx-text-fill: #FFFFFF;
+}
+
